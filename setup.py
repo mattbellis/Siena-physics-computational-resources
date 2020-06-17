@@ -23,7 +23,7 @@ setup(
     author='Matt Bellis',
     author_email='mbellis@siena.edu',
     license='GNU General Public License v3.0',
-    packages = ['gen_phys_tools'],
+    packages = ['siena_computational_tools'],
     install_requires = ['numpy','scipy'],
     #tests_require = ['pytest', 'pytest-cov'],
     classifiers=[ # HAVE TO FIX ALL THIS
