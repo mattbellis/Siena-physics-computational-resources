@@ -65,7 +65,7 @@ def quadratic_fit_to_data(xpts, ypts, yerr, starting_parameters=[1.0, 1.0, 1.0],
   fit_ypts = quadratic_func(fit_xpts,a,b,c)
 
   # Calculate a chi square value 
-  chi2 = ((((qudratic_func(xptsa,b,c) - ypts)**2)/(yerr**2)).sum()
+  chi2 = (((qudratic_func(xptsa,b,c) - ypts)**2)/(yerr**2)).sum()
   ndof = len(xpts) - 2
 
   if verbose:
