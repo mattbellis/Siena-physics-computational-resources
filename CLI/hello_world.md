@@ -24,9 +24,9 @@ Download the necessary files for this exercise.
 ```
 
 This should have downloaded the file to whatever directory you are in. Check to see that it's there by running
-
+```
   ls -l
-  
+```  
 
 Unpack (actually untar) this file with the following command (hit "Enter" after you type that). 
 
