@@ -19,8 +19,10 @@ Download a tar archive (similar to a zip file), with directories and files in it
 
 Download the necessary files for this exercise.
 
+```
   wget https://github.com/mattbellis/Siena-physics-computational-resources/raw/master/CLI/linux_hello_world.tgz
-  
+```
+
 This should have downloaded the file to whatever directory you are in. Check to see that it's there by running
 
   ls -l
