@@ -42,6 +42,11 @@ Your assignment now is to:
 
         python FILENAME
 
+or if that doesn't work
+```
+python3 FILENAME
+```
+
 * You may or may not get an error when you run one of these files. If so, try to fix the error by editing the file with `nano` or `pico` or the editor of your choice.
 * Look inside any data files you find. 
 * What is the full path to the data files?
