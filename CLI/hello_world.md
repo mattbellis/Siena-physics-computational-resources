@@ -37,7 +37,7 @@ What files/directories do you have now?
     ls -ltr 
 
 Your assignment now is to:
-* Map out the files and directories under "project".
+* Map out the files and directories under `work`.
 * Run any python scripts you find. Python scripts usually have a ```.py``` at the end of the filename.
 
         python FILENAME
