@@ -23,6 +23,12 @@ Download the necessary files for this exercise.
   wget https://github.com/mattbellis/Siena-physics-computational-resources/raw/master/CLI/linux_hello_world.tgz
 ```
 
+If you don't have access to `wget` you can do
+```
+  curl -L https://github.com/mattbellis/Siena-physics-computational-resources/raw/master/CLI/linux_hello_world.tgz --output linux_hello_world.tgz
+```
+
+
 This should have downloaded the file to whatever directory you are in. Check to see that it's there by running
 ```
   ls -l
