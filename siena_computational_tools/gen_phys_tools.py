@@ -21,7 +21,8 @@ def linear_fit_to_data(xpts, ypts, yerr, starting_parameters=[1.0, 1.0], verbose
 
   popt, pcov = curve_fit(linear_func, xpts, ypts, p0=starting_parameters, sigma=yerr, absolute_sigma=True)
 
-  #print(popt, pcov)
+  print("Parameters and covariance matrix")
+  print(popt, pcov)
 
   slope = popt[1]
   slope_uncert = np.sqrt(pcov[1][1])
