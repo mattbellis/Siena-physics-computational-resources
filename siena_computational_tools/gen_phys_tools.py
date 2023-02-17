@@ -69,9 +69,9 @@ def quadratic_fit_to_data(xpts, ypts, yerr, starting_parameters=[1.0, 1.0, 1.0],
   ndof = len(xpts) - 2
 
   if verbose:
-      print('a = {0:.3} +/- {1:.3}\nb = {2:.3} +/- {3:.3}\nc = {4:.3} +/- {5:.3}'.format(a,a_uncert, b, c_uncert, b, c_uncert))
+      print('a = {0:.3} +/- {1:.3}\nb = {2:.3} +/- {3:.3}\nc = {4:.3} +/- {5:.3}'.format(a,a_uncert, b, b_uncert, c, c_uncert))
       print('Chi2 = {0:.3f}  #dof = {1}'.format(chi2, ndof))
 
 
-  return a, a_uncert, b, c_uncert, b, c_uncert, fit_xpts, fit_ypts, chi2, ndof
+  return a, a_uncert, b, b_uncert, c, c_uncert, fit_xpts, fit_ypts, chi2, ndof
 
