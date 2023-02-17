@@ -21,8 +21,10 @@ def linear_fit_to_data(xpts, ypts, yerr, starting_parameters=[1.0, 1.0], verbose
 
   popt, pcov = curve_fit(linear_func, xpts, ypts, p0=starting_parameters, sigma=yerr, absolute_sigma=True)
 
-  print("Parameters and covariance matrix")
-  print(popt, pcov)
+  if (verbose):
+       print("Parameters and covariance matrix")
+       print(popt)
+       print(pcov)
 
   slope = popt[1]
   slope_uncert = np.sqrt(pcov[1][1])
@@ -50,8 +52,11 @@ def quadratic_fit_to_data(xpts, ypts, yerr, starting_parameters=[1.0, 1.0, 1.0],
   print('Fit with f(x)=ax^2 + bx + c')
 
   popt, pcov = curve_fit(quadratic_func, xpts, ypts, p0=starting_parameters, sigma=yerr, absolute_sigma=True)
-
-  print(popt, pcov)
+  
+  if (verbose):
+       print("Parameters and covariance matrix")
+       print(popt)
+       print(pcov)
 
   a = popt[0]
   a_uncert = np.sqrt(pcov[0][0])
