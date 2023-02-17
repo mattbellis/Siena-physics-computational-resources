@@ -50,7 +50,7 @@ def quadratic_fit_to_data(xpts, ypts, yerr, starting_parameters=[1.0, 1.0, 1.0],
 
   popt, pcov = curve_fit(quadratic_func, xpts, ypts, p0=starting_parameters, sigma=yerr, absolute_sigma=True)
 
-  #print(popt, pcov)
+  print(popt, pcov)
 
   a = popt[0]
   a_uncert = np.sqrt(pcov[0][0])
@@ -66,7 +66,7 @@ def quadratic_fit_to_data(xpts, ypts, yerr, starting_parameters=[1.0, 1.0, 1.0],
 
   # Calculate a chi square value 
   chi2 = (((quadratic_func(xpts,a,b,c) - ypts)**2)/(yerr**2)).sum()
-  ndof = len(xpts) - 2
+  ndof = len(xpts) - 3
 
   if verbose:
       print('a = {0:.3} +/- {1:.3}\nb = {2:.3} +/- {3:.3}\nc = {4:.3} +/- {5:.3}'.format(a,a_uncert, b, b_uncert, c, c_uncert))
